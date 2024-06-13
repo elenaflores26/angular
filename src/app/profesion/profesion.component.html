@@ -1,0 +1,27 @@
+<div class="container">
+<h1>{{titulo}}</h1>
+<h2>{{prueba}}</h2>
+
+<button class="btn btn-info"></button>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Profesion</th>
+      <th scope="col">Salario</th>
+      <th scope="col">Edad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let profesiones of profesion">
+      <th scope="row">{{profesiones.id}}</th>
+      <td>{{profesiones.nombre}}</td>
+      <td>{{profesiones.profesion}}</td>
+      <td>{{profesiones.salario}}</td>
+      <td>{{profesiones.edad}}</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
